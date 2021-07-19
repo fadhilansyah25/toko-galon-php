@@ -15,7 +15,7 @@
 
 <body>
     <?php
-    include('navbar.php');
+    include('./component/navbar.php');
     ?>
 
     <div class="mx-auto text-center pagination-centered" style="width: 80%;">

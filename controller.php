@@ -69,9 +69,9 @@ if ($_GET["act"] == "delete_barang") {
 if ($_GET["act"] == "transaksi") {
   $add = mysqli_query(
     $conn,
-    "INSERT INTO penjualan_air (nama_pembeli, id_barang, jumlah_beli, total_pembelian) 
+    "INSERT INTO penjualan_air (nama_pembeli, id_barang, jumlah_beli) 
     VALUES ('$_POST[namaPembeli]', '$_POST[idBarang]', 
-    '$_POST[jumlahBeli]', '$_POST[totalPembelian]')"
+    '$_POST[jumlahBeli]')"
   );
 
   if ($add) {
