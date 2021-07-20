@@ -1,5 +1,6 @@
 <?php
 require '../connection.php';
+include '../session.php';
 mysqli_select_db($conn, 'toko_galon');
 ?>
 <!DOCTYPE html>

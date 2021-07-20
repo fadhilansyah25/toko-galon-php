@@ -1,5 +1,6 @@
 <?php
 require '../connection.php';
+include '../session.php';
 mysqli_select_db($conn, 'toko_galon');
 setlocale(LC_MONETARY,'ID')
 ?>
@@ -53,7 +54,7 @@ setlocale(LC_MONETARY,'ID')
                         <td><?php echo $data[0]; ?></td>
                         <td><?php echo $data[1]; ?></td>
                         <td><?php echo $data[2]; ?></td>
-                        <td><?php echo $data[3]; ?></td>
+                        <td>Rp. <?php echo number_format($data[3], 0, '', '.'); ?></td>
                         <td><?php echo $data[4]; ?></td>
                         <td>Rp. <?php echo number_format($data[5], 0, '', '.'); ?></td>
                         <td>Rp. <?php echo number_format($data[6], 0, '', '.'); ?></td>

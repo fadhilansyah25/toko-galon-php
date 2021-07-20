@@ -1,5 +1,6 @@
 <?php
 require('../connection.php');
+include '../session.php';
 mysqli_select_db($conn, 'toko_galon');
 ?>
 
@@ -24,7 +25,7 @@ mysqli_select_db($conn, 'toko_galon');
         <div class="row">
             <div class="col-sm">
                 <h4 class="mb-5 mt-2">Barang Tersedia</h4>
-                <table class="table table-stripped table-hover datatab" id="dataTable">
+                <table class="table table-stripped table-hover datatab" id="dataTable" style="font-size: small;">
                     <thead class="thead-dark" style="width: 100%;">
                         <tr>
                             <th>ID</th>

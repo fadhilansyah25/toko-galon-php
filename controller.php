@@ -87,3 +87,9 @@ if ($_GET["act"] == "transaksi") {
   mysqli_close($conn);
 }
 
+// logout
+if ($_GET["logout"] == true) {
+  session_start();
+  session_destroy();
+  header("location: ./login/login.php");
+}
